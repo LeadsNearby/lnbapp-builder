@@ -34,8 +34,8 @@ function lnbapp_posttype() {
 			),
 			'taxonomies' => array(  
 				'post_tag',
-				'services',
-				'troubleshooter',
+				'app-services',
+				'app-troubleshooter',
 				//'about',
 			),
 			'show_ui' => true,
@@ -87,7 +87,7 @@ function lnbfaq_posttype() {
 			),
 			'taxonomies' => array(  
 				'post_tag',
-				'faq',
+				'app-faq',
 			),
 			'show_ui' => true,
 			'show_in_menu' => true,
@@ -114,7 +114,7 @@ function lnbapp_services() {
     'view_item' => __( 'View Service' )		
   );		
   register_taxonomy(  			
-    'services',  			
+    'app-services',  			
     'lnbapp',  			
     array(				
       'labels' => $labels,				
@@ -140,7 +140,7 @@ function lnbapp_faq() {
     'view_item' => __( 'View FAQ' )			
   );		
   register_taxonomy(  			
-    'faq',  			
+    'app-faq',  			
     'lnbfaq',  			
     array(				
       'labels' => $labels,				
